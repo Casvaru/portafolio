@@ -16,17 +16,10 @@ const section3 =  document.getElementById("section3")
 boxIconMenuMobile.addEventListener("click" , ()=>{
     boxIconMenu.classList.add("boxActive")
     boxIconMenu2.classList.remove("boxActive")
-
-    section2.classList.add("showSection2")
-    section.classList.add("hiddenSection")
-    section3.classList.remove("showSection3")
 })
 boxIconMenuMobile2.addEventListener("click" , ()=>{
     boxIconMenu.classList.remove("boxActive")
     boxIconMenu2.classList.add("boxActive")
-    section3.classList.add("showSection3")
-    section.classList.add("hiddenSection")
-    section2.classList.remove("showSection2")
 })
 
 //---------------------------------------------//
