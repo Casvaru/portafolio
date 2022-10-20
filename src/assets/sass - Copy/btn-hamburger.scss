@@ -1,0 +1,49 @@
+.btnHamburger{
+    width: 50px; height: 50px;
+    cursor: pointer;
+    margin: 20px 20px 0px 20px;
+    position: absolute;
+    right: 0;
+    display: none;
+        @media(max-width: $mobile){
+            display: block;
+        }
+    .btnHamburger__line{
+        width: 30px; height: 5px;
+        background: $black;
+        position: absolute;
+        margin: 3px 0px;
+        border-radius: 5px;
+        transform-origin: center;
+    }
+    .btnHamburger__line:nth-child(1){
+        width: 20px;
+        transition: .3s ease;
+    }
+    .btnHamburger__line:nth-child(2){
+        background: $clr-main;
+        top: 8px;
+    }
+    .btnHamburger__line:nth-child(3){
+        width: 25px;
+        top: 16px;
+        transition: .3s ease;
+    }
+    &:hover .btnHamburger__line:nth-child(1) , &:hover .btnHamburger__line:nth-child(3){
+        width: 30px;
+        transition: .3s ease;
+    }
+}
+.toggleActiveLine1{
+    width: 30px !important;
+    transform: rotate(45deg);
+    top: 8px !important;
+}
+.toggleActiveLine2{
+    opacity: 0;
+}
+.toggleActiveLine3{
+    width: 30px !important;
+    transform: rotate(-45deg);
+    top: 8px !important; 
+}

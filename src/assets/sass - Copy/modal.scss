@@ -1,0 +1,154 @@
+.containerModal{
+    position: fixed;
+    width: 100%; height: 100%;
+    max-width: 2500px;
+    background: $black-5a;
+    z-index: -4;
+    opacity: 0;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    transition: .1s ease-in-out;
+    font-size: 16px;
+        @media(max-width: $tablet){
+            font-size: 10px;
+        }
+        & .containerModal__modal{
+            width: 37.5em; height: 20.3125em;
+            margin: 0 auto;
+            background: $clr-bg;
+            border-radius: 0.625em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+                & .containerModal__section1{
+                        & .containerModal__photo{
+                            width: 13.75em; height: 13.75em;
+                            border-radius: 50%;
+                            background: $black-1a;
+                            box-shadow: 0px 5px 5px $black-3a;
+                            margin: auto;
+                            margin-top: 3.125em;
+                            overflow: hidden;
+                                & .containerModal__img{
+                                    width: 100%; height: auto;
+                                }
+                        }
+                }
+                & .containerModal__section2{
+                    display: inline-block;
+                    & .containerModal__title{
+                        margin-top: 5.625em;
+                    }
+                    & .containerModal__mail{
+                        width: 13.75em; height: 2.1875em;
+                        border-radius: 0.5em;
+                        background: $white;
+                        box-shadow: 3px 3px 5px $black-3a;
+                        display: inline-block;
+                    }
+                    & .containerModal__copy{
+                        width: 30px; height: 30px;
+                        display: inline-block;
+                        position: relative;
+                        &::before{
+                            content: "Copiado";
+                            width: 70px; height: 33px;
+                            text-align: center;
+                            font-size: 12px;
+                            line-height: 35px;
+                            background: $clr-main;
+                            color: $white;
+                            left: 0; top: 0;
+                            margin-top: 40px;
+                            margin-left: -18px;
+                            position: absolute;
+                            box-shadow: 3px 3px 5px $black-3a;
+                            opacity: 0;
+                            z-index: -1;
+                            transition: .3s ease-in-out;
+                            clip-path: polygon(50% 0%, 40% 20%,0% 20%, 0% 100%, 100% 100%, 100% 20%, 100% 20%, 60% 20%);
+                        }
+                        & .containerModal__copy--icon{
+                            width: 2.1875em; height: 2.1875em;
+                            background: $white;
+                            box-shadow: 0px 2px 2px 0px $black-3a;
+                            border-radius: 0.5em;
+                            display: inline-block;
+                            cursor: pointer;
+                            transition: .1s ease-in-out;
+                            padding: 0.4375em;
+                                &:hover{
+                                    background: $clr-mainhover;
+                                    transition: .1s ease-in-out;
+                                }
+                        }
+                    }
+                    & .containerModal__location{
+                        font-weight: 500;
+                        margin-top: 0.625em;
+                        margin-bottom: 0.625em;
+                    }
+                    & .containerModal__whatsapp{
+                        background: $clr-whatsapp;
+                        padding: 0.3125rem 3.0em;
+                        border-radius: 0.5em;
+                        box-shadow: 0px 3px 5px 0px $black-3a;
+                        text-align: center;
+                        line-height: 2.5;
+                        font-weight: 600;
+                        font-size: 1em;
+                        color: $black;
+                        transition: .1s ease-in-out;
+                            &:hover{
+                                background: $clr-whatsapp-hover;
+                                transition: .1s ease-in-out;
+                            }
+                    }
+                }
+        }
+        & .containerModal__close{
+            width: 1.875em; height: 1.875em;
+            margin-left: 34.6875em;
+            margin-top: 10px;
+            position: absolute;
+            cursor: pointer;
+                &:hover span{
+                    background: $clr-main;
+                }
+                & span{
+                    width: 0.3125em; height: 1.5625em;
+                    display: inline-block;
+                    border-radius: 0.3125em;
+                    background: $black;
+                    position: absolute;
+                    margin-top: 0.1875em;
+                    margin-left: 0.8125em;
+                }
+                & span:nth-child(1){
+                    transform: rotate(45deg);
+                }
+                & span:nth-child(2){
+                    transform: rotate(-45deg);
+                }
+        }
+}
+.modalActive{
+    width: 100%; height: 100%;
+    top: 0;
+    margin-top: 0%;
+    opacity: 1;
+    z-index: 100;
+    transition: .1s ease-in-out;
+}
+.modalClose{
+    opacity: 1;
+}
+.copiedSucess{
+    &::before{
+        opacity: 1 !important;
+        height: 0px;
+        transition: .3s ease-in-out;
+        z-index: 2 !important;
+    }
+}

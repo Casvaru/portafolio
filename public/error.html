@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Oops!</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Poppins', Roboto, Courier New;
+        }
+        .container{
+            position: absolute;
+            background: #fff;
+            margin: 0 auto;
+            width: 500px;
+            height: 300px;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .2);
+            left: 50%; top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .container h2{
+            margin-top: 20px;
+            font-size: 40px;
+            text-align: center;
+            color: #871846;
+        }
+        .container h6{
+            text-align: center;
+            font-size: 40px;
+        }
+        .container a{
+            padding: 10px 20px;
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            background: #871846;
+            color: #fff;
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+            margin-top: 20px;
+            max-width: 100px;
+        }
+        .container h5{
+            width: 100%;
+            text-align: center;
+            font-weight: normal;
+        }
+        .container a:active{
+            opacity: .5;
+        }
+    </style>
 </head>
 <body>
-    <h1>Error</h1>
+    <div class="container">
+        <h2>404</h2>
+        <h6>Enlace incorrecto</h6>
+        <h5>Click en el botón para redirigirte a la página principal</h5>
+        <a href="http://www.casvaru.com">Inicio</a>
+    </div>
 </body>
 </html>

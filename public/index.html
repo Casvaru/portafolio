@@ -5,11 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casvaru | Portfolio</title>
+    <meta name="description" content="Soy diseñador gráfico multimedial egresado de la Unigermana, enfocado en la creación de piezas gráficas y desarrollo web con un estilo minimalista para productos y/o servicios digitales.">
+    <meta name="keywords" content="casvaru , desarrollador web , diseño grafico , diseñador grafico, mockup , diseño de mockup , modelado 3d , figma , colombia , bogotá , developer">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../src/assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <body>
+    <div id="loaderScreen" class="loaderScreen">
+        <div class="loaderScreen__circle">
+            <svg class="icon-svg loaderScreen_logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path class="st0" d="M104.67,226.37c0-75.24,41.46-134.11,131.04-134.11c52.99,0,91.05,24.88,92.11,71.68
+                                c0.64,27.92-21.44,51.29-49.37,51.16c-28.03-0.12-48.89-21.07-48.89-49.14c0-28.15,20.99-49.14,48.63-49.14
+                                c-4.61-5.63-15.87-9.21-27.13-9.21c-43,0-64.5,42.49-64.5,105.96s21.5,105.96,69.62,105.96c20.28,0,39.73-7.47,53.49-22.03
+                                c2.73-2.89,7.12-3.46,10.54-1.43h0c4.27,2.53,5.48,8.15,2.68,12.25c-23.79,34.78-56.88,52.16-98.44,52.16
+                                C146.13,360.48,104.67,301.61,104.67,226.37z"/>
+                        </g>
+                        <g>
+                            <path class="st1" d="M335.4,226.81c0-14.27,11.42-25.68,25.68-25.68c14.27,0,25.68,11.42,25.68,25.68
+                                c0,14.27-11.42,25.69-25.68,25.69C346.81,252.5,335.4,241.08,335.4,226.81z M335.4,382.63l14.55-14.55
+                                c5.71-5.71,9.13-10.84,10.84-17.41c-13.98-0.29-25.4-11.42-25.4-25.69c0-14.27,11.42-25.68,25.68-25.68
+                                c14.27,0,25.68,11.42,25.68,25.68c0,12.84-5.14,23.4-30.82,49.09l-14.55,14.55L335.4,382.63z"/>
+                        </g>
+                    </g>
+                </svg>
+        </div>
+    </div>
     <main id="app">
         <header class="mainHeader">
             <div id="btn-menu" class="btnHamburger">
@@ -40,7 +65,7 @@
         <div id="menu" class="menu">
             <a href="#aboutme">
                 <div class="menu__container">
-                <div id="box1" class="menu__box">
+                <div id="box1" class="menu__box btn1">
                 <svg class="icon__svg menu__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                     <g id="Group_5" transform="translate(0)">
@@ -55,8 +80,8 @@
                 </div>
             </div></a>
                 <div id="menu" class="menu__container">
-            <a href="#project">
-                <div id="box2" class="menu__box">
+            <a href="#projects">
+                <div id="box2" class="menu__box btn2">
                     <svg class="icon__svg menu__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                     <path id="Path_11" class="st0" d="M59.45,56.71h155.91l64.35,67.4h160.87c33.56,0.79,60.14,28.62,59.39,62.19v194.29
@@ -89,7 +114,7 @@
             </div>
         </div>
         <div id="menuMobile" class="menuMobile">
-            <div class="menuMobile__aboutMe">
+            <div class="menuMobile__aboutMe btnM1">
                 <a id="closeMenuMobileAbout" href="#aboutme">
                 <svg class="menuMobile__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
@@ -108,8 +133,8 @@
                     </svg>
                 </a>
             </div>
-            <div class="menuMobile__projects">
-                <a id="closeMenuMobileProject" href="#project">
+            <div class="menuMobile__projects btnM2">
+                <a id="closeMenuMobileProject" href="#projects">
                 <svg class="menuMobile__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                     <path id="Path_11" class="st0" d="M59.45,56.71h155.91l64.35,67.4h160.87c33.56,0.79,60.14,28.62,59.39,62.19v194.29
@@ -200,7 +225,7 @@
                     </svg></a>
                 </div>
                 <div class="menuMobile__iconSocial">
-                    <a target="_blank" href="https://www.instagram.com/carlo.seg/">
+                    <a target="_blank" href="https://www.instagram.com/casvaru.dev/">
                     <svg class="icon-svg menuSocial__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                         <path id="Icon_awesome-instagram" d="M250.18,121.88c-70.82,0-128.23,57.41-128.23,128.23s57.41,128.23,128.23,128.23
@@ -272,7 +297,7 @@
                 </svg></a>
             </div>
             <div class="menuSocial__icon">
-                <a target="_blank" href="https://www.instagram.com/carlo.seg/">
+                <a target="_blank" href="https://www.instagram.com/casvaru.dev/">
                 <svg class="icon-svg menuSocial__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
                     <path id="Icon_awesome-instagram" d="M250.18,121.88c-70.82,0-128.23,57.41-128.23,128.23s57.41,128.23,128.23,128.23
@@ -382,9 +407,9 @@
                                 c0.49-1.21,1.69-1.87,2.98-1.87c1.92,0,3.41,1.2,3.41,3.61v4.96h-1.38V16.48z"/>
                         </g>
                     </svg>
-                    <div onclick="copyToClipboard()" id="btnCopy" class="containerModal__copy" title="Copiar">
+                    <div onclick="copyToClipboard(text)" id="btnCopy" class="containerModal__copy" title="Copiar">
                         <svg class="containerModal__copy--icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" fill="#000000" xml:space="preserve">
                             <g id="Icon_feather-copy" transform="translate(1.5 1.5)">
                                 <g id="Path_32">
                                     <path d="M83.49,98.64h-39.5c-8.25,0-14.96-6.71-14.96-14.96v-39.5c0-8.25,6.71-14.96,14.96-14.96h39.5
@@ -402,7 +427,7 @@
                     <div>
                         <h5 class="containerModal__location">Bogotá - Colombia</h5>
                     </div>
-                    <a target="_blank" href="" class="containerModal__whatsapp">
+                    <a target="_blank" href="https://wa.me/573182022086" class="containerModal__whatsapp">
                         Whatsapp web
                     </a>
                 </div>
@@ -411,12 +436,11 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" id="home" class="containerFirst">
+        <section data-aos="fade-right" id="home" class="containerFirst">
             <div class="title">
-                <h2 class="title__profession">Desarrollador Front-end <span class="title__brace">{</span></h2>
+                <h2 class="title__profession">Diseñador Front-end <span class="title__brace">{</span></h2>
                     <div class="containerName">
                         <h1 class="containerName__title">Carlos Segura<span class="containerName__symbol">;</span></h1>
-                        <span class="containerName__pleca"></span>
                     </div>
                 <h2><span class="title__brace">}</span></h2>
                 <h4 class="title__slogan">{Aprende, crea, divierte y repite...}</h4>
@@ -432,21 +456,21 @@
             <div class="containerPicture">
                 <div class="containerPicture__picture"></div>
             </div>
-        </div>
-        <div data-aos="fade-up" id="aboutme" class="containerSecond">
+        </section>
+        <section data-aos="fade-right" id="aboutme" class="containerSecond">
             <div class="containerSecond__row1">
                 <h2 class="containerSecond__subtitle"><span class="containerSecond__brace">{</span>Sobre mi...<span class="containerSecond__brace">}</span></h2>
-                <div id="capsule1" class="containerSecond__capsule containerSecond__capsule--active">
+                <div data-aos="fade-up" id="capsule1" class="containerSecond__capsule containerSecond__capsule--active">
                     <h6 class="containerSecond__title">Personal</h6>
                 </div>
-                <div id="capsule2" class="containerSecond__capsule">
+                <div data-aos="fade-up" id="capsule2" class="containerSecond__capsule">
                     <h6 class="containerSecond__title">Experiencia</h6>
                 </div>
-                <div id="capsule3" class="containerSecond__capsule">
+                <div data-aos="fade-up" id="capsule3" class="containerSecond__capsule">
                     <h6 class="containerSecond__title">Habilidades</h6>
                 </div>
             </div>
-            <div class="containerSecond__row2">
+            <div data-aos="fade-left" class="containerSecond__row2">
                 <p id="paragraph1" class="containerSecond__paragraph containerSecond__paragraph--active">Apacionado, curioso y amante del aprendizaje constante tanto en programación web, artes, desarrollo personal, tecnologías de software y hardware. <br> <br>
                 Como diseñador y desarrollador web, tengo conocimientos básicos de back-end pero me  destaco principalmente en el front-end de aplicaciones, maquetación, entornos gráficos y mejoras UI/UX. <br><br>
                 </p>
@@ -460,6 +484,38 @@
                 </p>
                 <div id="paragraph3" class="containerSecond__grid">
                     <div class="containerSecond__box">
+                        <svg style="fill: #F20600;" class="containerSecond__iconskill"s version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <polygon points="49.88,39.21 33.59,75.13 50.71,75.13 57.39,91.84 -0.24,91.84 36.94,8.3 62.83,8.3 100,91.84 73.27,91.84 "/>
+                        </svg>
+                        <span class="containerSecond__container">
+                            <h6 class="containerSecond__subtitle">Adobe</h6>
+                        </span>
+                    </div>
+                    <div class="containerSecond__box">
+                        <svg class="containerSecond__iconskill" style="fill:#E37000;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <style type="text/css">
+                            .st1{fill:#255483;}
+                        </style>
+                        <g>
+                            <path class="st0 fill:#E37000;" d="M99.71,54.65c-0.59-4.12-2.03-8.06-4.24-11.59c-2.05-3.28-4.66-6.16-7.72-8.52l-31.26-24l-0.08-0.06
+                                c-2.35-1.58-5.41-1.58-7.76,0c-1.72,0.91-2.38,3.05-1.46,4.77c0.23,0.44,0.56,0.83,0.95,1.13l13.04,10.61l-39.76,0.04h-0.04
+                                c-3.17-0.09-6.04,1.89-7.07,4.89c-0.64,2.78,1.58,5.07,5,5.09l20.14-0.04L3.5,64.58l-0.14,0.11c-3.29,2.03-4.34,6.33-2.35,9.64
+                                c2.82,2.8,7.38,2.81,10.21,0.02l19.62-16.05c-0.15,1.15-0.24,2.31-0.26,3.47l-0.02,0c0.12,1.98,0.48,3.94,1.07,5.84
+                                c1.35,4.27,3.62,8.2,6.64,11.5c3.25,3.57,7.21,6.41,11.62,8.34c9.73,4.24,20.8,4.22,30.51-0.05c4.41-1.95,8.37-4.81,11.61-8.38
+                                c3.03-3.32,5.3-7.25,6.65-11.54C99.97,63.33,100.32,58.95,99.71,54.65z M85.32,63.78c-0.94,2.54-2.41,4.86-4.31,6.78l-0.01,0
+                                c-8.79,8.6-22.84,8.62-31.66,0.05c-1.91-1.92-3.38-4.22-4.32-6.76c-1.74-4.83-1.31-10.18,1.18-14.68c1.22-2.2,2.86-4.14,4.81-5.72
+                                c8.3-6.57,20.02-6.59,28.33-0.04c1.95,1.57,3.58,3.51,4.8,5.7c1.22,2.19,1.96,4.62,2.18,7.11C86.54,58.79,86.2,61.36,85.32,63.78z"
+                                />
+                            <ellipse class="st1" cx="65.18" cy="57.77" rx="13.35" ry="12.2"/>
+                        </g>
+                        </svg>
+                        <span class="containerSecond__container">
+                            <h6 class="containerSecond__subtitle">Blender</h6>
+                        </span>
+                    </div>
+                    <div class="containerSecond__box">
                         <svg style="fill: #FF3336;" class="containerSecond__iconskill" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                             viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
                             <path id="Icon_awesome-html5" class="st0" d="M9.02,0l7.82,88.71l35.1,11.7l35.32-11.7L95.09,0H9.02z M78.1,28.66H36.9l0.92,11.07
@@ -467,7 +523,7 @@
                             h54.04L78.1,28.66L78.1,28.66z"/>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">HTML</h6>
+                            <h6 class="containerSecond__subtitle">HTML</h6>
                         </span>
                     </div>
                     <div class="containerSecond__box">
@@ -477,7 +533,7 @@
                             l27.94-9.25l3.92-20.23H6.15l3.33-17.08H79l2.19-10.98H11.73l3.4-17.08H100z"/>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">CSS</h6>
+                            <h6 class="containerSecond__subtitle">CSS</h6>
                         </span>
                     </div>
                     <div class="containerSecond__box">
@@ -494,7 +550,7 @@
                         </g>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">Javascript</h6>
+                            <h6 class="containerSecond__subtitle">Javascript</h6>
                         </span>
                     </div>
                     <div class="containerSecond__box">
@@ -517,7 +573,7 @@
                         </g>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">Node JS</h6>
+                            <h6 class="containerSecond__subtitle">Node JS</h6>
                         </span>
                     </div>
                     <div class="containerSecond__box">
@@ -531,7 +587,7 @@
                             l43.46-43.46C100.63,52.14,100.63,48.06,98.11,45.54L98.11,45.54z"/>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">GIT</h6>
+                            <h6 class="containerSecond__subtitle">GIT</h6>
                         </span>
                     </div>
                     <div class="containerSecond__box">
@@ -570,7 +626,7 @@
                         c0.72-1.46,1.73-2.76,2.97-3.83c0.18,0.54,0.28,1.11,0.3,1.69C74.81,66.33,73.15,68.54,70.73,69.21L70.73,69.21z"/>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">SASS</h6>
+                            <h6 class="containerSecond__subtitle">SASS</h6>
                         </span>
                     </div>
                     <div class="containerSecond__box statusLearning">
@@ -608,7 +664,7 @@
                             C41.1,53.1,45.1,57.1,50.03,57.1z"/>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">En curso</h6>
+                            <h6 class="containerSecond__subtitle">En curso</h6>
                         </span>
                     </div>
                     <div class="containerSecond__box statusLearning">
@@ -625,23 +681,67 @@
                             c-0.03-1.37,0-2.75,0.11-4.12c0.05-0.07,7.96-0.1,17.56-0.08l17.47,0.05L57.07,50.15z"/>
                         </svg>
                         <span class="containerSecond__container">
-                            <h6 class="conatinerSecond__subtitle">En curso</h6>
+                            <h6 class="containerSecond__subtitle">En curso</h6>
                         </span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div data-aos="fade-up" id="project" class="containerThird">
+        </section>
+        <section data-aos="fade-right" id="projects" class="containerThird">
             <h2 class="containerThird__subtitle"><span class="containerThird__brace">{</span>Proyectos...<span class="containerThird__brace">}</span></h2>
-            <div class="containerThird__container">
+            <div data-aos="fade-up" class="containerThird__container">
+                <div class="galleryProjects">
+                    <div data-aos="fade-up" id="slider1" class="galleryProjects__containerMaster">
+                        <div class="galleryProjects__container gallerySlider--mainActive">
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152257653/Moneybeam-Diseno-UI-APP">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider1/01.gif" alt="">
+                        </a>
+                        </div>
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152257653/Moneybeam-Diseno-UI-APP">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider1/02.png" alt="">
+                        </a>
+                        </div>
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152257653/Moneybeam-Diseno-UI-APP">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider1/03.png" alt="">
+                        </a>
+                        </div>
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152257653/Moneybeam-Diseno-UI-APP">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider1/04.png" alt="">
+                        </a>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="slider2" class="galleryProjects__containerMaster">
+                        <div class="galleryProjects__container">
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152597889/Bv-Forms-New-Design">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider2/01.gif" alt="">
+                        </a>
+                        </div>
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152597889/Bv-Forms-New-Design">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider2/02.png" alt="">
+                        </a>
+                        </div>
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152597889/Bv-Forms-New-Design">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider2/03.png" alt="">
+                        </a>
+                        </div>
+                        <div class="galleryProjects__box">
+                            <a target="_blank" class="containerThird__link" href="https://www.behance.net/gallery/152597889/Bv-Forms-New-Design">
+                            <img loader="lazy" class="galleryProjects__img" src="../src/assets/img/slider2/04.png" alt="">
+                        </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="boxBottons">
-                    <svg class="boxBottons__arrowLeft" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                    <path id="Icon_ionic-ios-arrow-forward" class="st0" d="M38.59,50.12l37.77,37.74c2.78,2.76,2.79,7.26,0.03,10.04
-                        c-0.01,0.01-0.02,0.02-0.03,0.03c-2.8,2.76-7.3,2.76-10.1,0L23.47,55.17c-2.69-2.7-2.78-7.03-0.2-9.84L66.24,2.28
-                        c2.68-2.89,7.2-3.05,10.08-0.37c2.89,2.68,3.05,7.2,0.37,10.08c-0.11,0.12-0.23,0.24-0.36,0.36L38.59,50.12z"/>
-                    </svg>
-                    <svg class="boxBottons__arrowRight" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    <svg class="boxBottons__arrowRight" version="1.1" id="btnRight" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
                     <path id="Icon_ionic-ios-arrow-forward" class="st0" d="M61.41,49.88L23.64,12.14c-2.78-2.76-2.79-7.26-0.03-10.04
                         c0.01-0.01,0.02-0.02,0.03-0.03c2.8-2.76,7.3-2.76,10.1,0l42.79,42.76c2.69,2.7,2.78,7.03,0.2,9.84L33.76,97.72
@@ -649,18 +749,20 @@
                     </svg>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <script src="../src/assets/js/copy-clipboard.js"></script>
     <script src="../src/assets/js/capsule-click.min.js"></script>
     <script src="../src/assets/js/btn-modal.min.js"></script>
-    <script src="../src/assets/js/menu-hover.min.js"></script>
+    <script src="../src/assets/js/menu-hover.js"></script>
     <script src="../src/assets/js/btn-hamburger.min.js"></script>
     <script src="../src/assets/js/dark-mode.min.js"></script>
     <script src="../src/assets/js/menu-mobile.min.js"></script>
+    <script src="../src/assets/js/gallery-slider.js"></script>
+    <script src="../src/assets/js/loaderScreen.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
