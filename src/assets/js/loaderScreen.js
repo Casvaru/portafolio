@@ -1,3 +1,1 @@
-$(window).load(function() {
-    $(".loaderScreen").addClass("loaderScreenActive");
-});
+$(window).load(function() {$(".loaderScreen").addClass("loaderScreenActive");});
