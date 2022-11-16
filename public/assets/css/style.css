@@ -8,10 +8,10 @@
 }
 
 .btnHamburger {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  margin: 20px 20px 0px 20px;
+  margin: 10px 20px 0px 20px;
   position: absolute;
   right: 0;
   display: none;
@@ -51,7 +51,6 @@
 .toggleActiveLine1 {
   width: 30px !important;
   transform: rotate(45deg);
-  top: -5px;
 }
 
 .toggleActiveLine2 {
@@ -60,7 +59,7 @@
 
 .toggleActiveLine3 {
   width: 30px !important;
-  top: 5px;
+  margin-top: 8px !important;
   transform: rotate(-45deg);
 }
 
@@ -88,16 +87,18 @@
 }
 @media (max-width: 912px) {
   .logo__casvaru {
-    margin: auto;
-    display: block;
-    margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 2px;
   }
 }
 @media (max-width: 700px) {
   .logo__casvaru {
-    margin: auto;
-    margin-top: 10px;
-    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    margin-top: 0px;
   }
 }
 
@@ -110,7 +111,6 @@
     top: 0;
     right: 0;
     margin-right: 50px;
-    margin-top: 10px;
     position: absolute;
   }
 }
@@ -216,9 +216,9 @@
     display: flex;
     justify-content: space-between;
     width: 150px;
-    height: 70px;
+    height: 30px;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 540px) {
@@ -249,14 +249,20 @@
 }
 
 .menuMobile {
-  clip-path: circle(0% at calc(100% - 50px) calc(0% - 50px));
+  clip-path: circle(0% at calc(100% - 50px) calc(0% + 30px));
   position: fixed;
+  top: 0;
   left: 0;
-  display: block;
   width: 100%;
   height: 100%;
   background: #F6F6F6;
   transition: 0.5s ease-in-out;
+  z-index: 5;
+}
+@media (min-width: 700px) {
+  .menuMobile {
+    display: none;
+  }
 }
 .menuMobile .menuMobile__aboutMe, .menuMobile .menuMobile__projects, .menuMobile .menuMobile__contactMe {
   width: 80%;
@@ -274,7 +280,7 @@
   transition: 0.3s ease-in-out;
 }
 .menuMobile .menuMobile__aboutMe {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .menuMobile .menuMobile__text {
   width: 100%;
@@ -322,7 +328,6 @@
 .menuMobile--active {
   clip-path: circle(100% at 50% 50%);
   transition: 0.7s ease-in-out;
-  z-index: 3 !important;
 }
 
 .hiddenText {
@@ -343,23 +348,25 @@
   left: 0;
   bottom: 0;
   right: unset;
-  margin-left: 7px;
+  margin-left: 8px;
   margin-bottom: 30px;
   background: #871846;
 }
 @media (max-width: 912px) {
   .switchDarkMode {
-    width: 60px;
-    height: 35px;
-    margin-bottom: 17px;
+    width: 56px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 15px;
   }
 }
 @media (max-width: 540px) {
   .switchDarkMode {
-    width: 60px;
-    height: 35px;
+    width: 55px;
+    height: 30px;
     top: 0px;
-    margin-top: 17px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }
 .switchDarkMode::before {
@@ -377,14 +384,14 @@
 }
 @media (max-width: 912px) {
   .switchDarkMode::before {
-    width: 27px;
-    height: 27px;
+    width: 23px;
+    height: 23px;
   }
 }
 @media (max-width: 540px) {
   .switchDarkMode::before {
-    width: 27px;
-    height: 27px;
+    width: 22px;
+    height: 22px;
   }
 }
 .switchDarkMode.active {
@@ -426,11 +433,14 @@
 }
 
 .mainHeader {
-  width: 100%;
-  height: 70px;
+  width: 90%;
+  height: 50px;
+  margin-top: 10px;
   position: fixed;
-  transition: 0.3s ease-out;
-  z-index: 9;
+  margin-left: 5%;
+  border-radius: 25px;
+  transition: transform 0.3s ease-out;
+  z-index: 10;
   box-shadow: -5px 5px 5px #b1b1b1, 8px -8px 10px #fff;
   background: linear-gradient(225deg, #eee, #f4f4f4);
 }
@@ -445,8 +455,8 @@
     border-radius: 15px;
   }
   .mainHeader:hover {
-    transform: scale(1.05);
-    transition: 0.4s ease-out;
+    transform: scale(1.03);
+    transition: transform 0.4s ease-out;
   }
 }
 
@@ -716,6 +726,7 @@ body.dark.dark .boxBottons {
   margin-top: 100px;
   color: rgba(0, 0, 0, 0.5019607843);
   transition: 0.2s ease-in-out;
+  white-space: nowrap;
 }
 @media (max-width: 540px) {
   .containerFirst .title__slogan {
@@ -935,10 +946,8 @@ body.dark.dark .boxBottons {
   border-radius: 30px;
   margin: 20px 200px;
   cursor: pointer;
-  transition-property: background;
   position: relative;
   overflow: hidden;
-  transition: 0.3s ease-in-out !important;
   background: linear-gradient(225deg, #f0f0f0, rgba(135, 24, 70, 0.0784313725));
   box-shadow: -4px 8px 20px #d0d0d0, 8px -8px 15px #fff;
 }
@@ -948,13 +957,13 @@ body.dark.dark .boxBottons {
   height: 100%;
   position: absolute;
   background: #871846;
-  transition: 0.2s ease-in;
+  transition: clip-path 0.2s ease-in;
   clip-path: circle(0% at 0% 50%);
 }
 .containerSecond .containerSecond__capsule:hover::after {
   clip-path: circle(15% at 0% 50%);
   background: #871846;
-  transition: 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out;
 }
 .containerSecond .containerSecond__capsule:active {
   box-shadow: inset -5px -5px 5px #dadada;
@@ -989,7 +998,6 @@ body.dark.dark .boxBottons {
   max-width: 40%;
   margin-top: 200px;
   position: relative;
-  transition: 0.2s ease-in-out;
 }
 @media (max-width: 912px) {
   .containerSecond .containerSecond__row2 {
@@ -1010,7 +1018,6 @@ body.dark.dark .boxBottons {
   z-index: -3;
   opacity: 0;
   margin-top: 60px;
-  transition: 0.2s ease-in-out;
   text-align: justify;
 }
 @media (max-width: 540px) {
@@ -1060,13 +1067,11 @@ body.dark.dark .boxBottons {
   display: flex;
   position: relative;
   overflow: hidden;
-  transition: 0.5s ease-in-out;
   background: #e9e9e9;
 }
 .containerSecond .containerSecond__grid .containerSecond__box:hover .containerSecond__container {
   margin-bottom: 5px;
   opacity: 1;
-  transition: 0.2s ease-in-out;
 }
 .containerSecond .containerSecond__grid .containerSecond__box .containerSecond__container {
   position: absolute;
@@ -1100,14 +1105,13 @@ body.dark.dark .boxBottons {
 
 .containerSecond__capsule--active {
   width: 400px !important;
-  transition: 0.3s ease-in-out !important;
+  transition: width 0.3s ease-in-out !important;
 }
 .containerSecond__capsule--active::after {
   clip-path: circle(100% at 50% 50%) !important;
-  transition: 0.5s ease-in;
+  transition: clip-path 0.1s ease-in;
 }
 .containerSecond__capsule--active::before {
-  transition: 0.1s ease-in;
   color: #FFFFFF !important;
 }
 @media (max-width: 1250px) {
@@ -1362,14 +1366,24 @@ body.dark.dark .boxBottons {
   grid-template-columns: 1fr 1fr;
   position: relative;
 }
+.containerModal .containerModal__modal .containerModal__section1 {
+  width: 100%;
+}
 .containerModal .containerModal__modal .containerModal__section1 .containerModal__photo {
-  width: 13.75rem;
-  height: 13.75em;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.1019607843);
   margin: auto;
-  margin-top: 3.125em;
+  margin-top: 20px;
   overflow: hidden;
+}
+@media (min-width: 700px) {
+  .containerModal .containerModal__modal .containerModal__section1 .containerModal__photo {
+    margin-top: 45px;
+    width: 230px;
+    height: 230px;
+  }
 }
 .containerModal .containerModal__modal .containerModal__section1 .containerModal__photo .containerModal__img {
   width: 100%;

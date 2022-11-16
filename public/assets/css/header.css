@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
  *   ,
- * 3 |         @media(max-width: $laptop){
- *   |                           ^^^^^^^
+ * 3 |     @media(max-width: $laptop){
+ *   |                       ^^^^^^^
  *   '
- *   sass\menu.scss 3:27   @import
+ *   sass\menu.scss 3:23   @import
  *   sass\header.scss 1:9  root stylesheet */
 
 body::before {
@@ -14,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502          @media(max-width: $laptop){\d\a   \2502                            ^^^^^^^\a   \2575 \a   sass\\menu.scss 3:27   @import\a   sass\\header.scss 1:9  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      @media(max-width: $laptop){\d\a   \2502                        ^^^^^^^\a   \2575 \a   sass\\menu.scss 3:23   @import\a   sass\\header.scss 1:9  root stylesheet";
 }
