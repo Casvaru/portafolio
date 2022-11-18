@@ -2,11 +2,15 @@
   "name": "Portfolio Carlos Segura",
   "version": "1.0.0",
   "main": "index.html",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["diseño grafico", "diseñador web", "casvaru", ""],
+  "keywords": [
+    "diseño grafico",
+    "diseñador web",
+    "casvaru",
+    ""
+  ],
   "author": "Casvaru",
   "license": "ISC",
   "description": "Soy diseñador gráfico multimedial egresado de la Unigermana, enfocado en la creación de piezas gráficas y desarrollo web con un estilo minimalista para productos y/o servicios digitales."
