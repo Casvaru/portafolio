@@ -24,7 +24,7 @@
 .btnHamburger .btnHamburger__line {
   width: 30px;
   height: 5px;
-  background: #000000;
+  background: #FFFFFF;
   position: absolute;
   margin: 3px 0px;
   border-radius: 5px;
@@ -71,10 +71,10 @@
   transition: 0.2s ease-out;
 }
 .logo__casvaru .st0 {
-  fill: #181C1F;
+  fill: #FFFFFF;
 }
 .logo__casvaru .st1 {
-  fill: #861846;
+  fill: #FFFFFF;
 }
 .logo__casvaru:hover {
   transition: 0.2s ease-out;
@@ -157,15 +157,16 @@
   transition: 0.3s ease;
   position: absolute;
   display: flex;
+  fill: #FFFFFF;
 }
 .menu .menu__container .menu__box:hover {
   padding: 8px;
   transition: 0.1s ease;
   background: rgba(135, 24, 70, 0.4);
-  background: #efefef;
   margin-left: 10px;
   margin-top: -3px;
-  box-shadow: inset -8px 1px 5px #d7d7d7, inset -6px -6px 10px #fff;
+  background: #1e1e1e;
+  box-shadow: inset -10px 0px 5px #292929;
 }
 .menu .menu__container .menu__box .menu__icon {
   width: 20px;
@@ -207,7 +208,7 @@
 .menuSocial {
   position: absolute;
   bottom: 0;
-  margin-bottom: 75px;
+  margin-bottom: 20px;
 }
 @media (max-width: 912px) {
   .menuSocial {
@@ -237,10 +238,10 @@
   height: 17px;
   margin: 5px 19px;
   cursor: pointer;
-  fill: rgba(0, 0, 0, 0.5019607843);
+  fill: #FFFFFF;
 }
 .menuSocial .menuSocial__svg:hover {
-  fill: #000000;
+  opacity: 0.5;
 }
 @media (max-width: 912px) {
   .menuSocial .menuSocial__svg {
@@ -255,7 +256,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #F6F6F6;
+  background: #23272E;
   transition: 0.5s ease-in-out;
   z-index: 5;
 }
@@ -274,6 +275,9 @@
   margin-top: 20px;
   margin-bottom: 20px;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+  fill: #FFFFFF;
 }
 .menuMobile .menuMobile__aboutMe:hover, .menuMobile .menuMobile__projects:hover, .menuMobile .menuMobile__contactMe:hover {
   background: rgba(135, 24, 70, 0.4) !important;
@@ -287,6 +291,7 @@
   display: inline-block;
   text-align: center;
   font-size: 16px;
+  color: #FFFFFF;
 }
 .menuMobile .menuMobile__icon {
   position: absolute;
@@ -302,6 +307,7 @@
   position: absolute;
   right: 0;
   margin-right: 70px;
+  fill: #FFFFFF;
 }
 .menuMobile .menuMobile__social {
   width: 80%;
@@ -309,7 +315,7 @@
 }
 .menuMobile .menuMobile__social .menuMobile__title {
   text-align: center;
-  color: #000000;
+  color: #FFFFFF;
   font-size: 16px;
   padding: 20px;
   margin-top: 150px;
@@ -323,6 +329,7 @@
   height: 25px;
   display: inline-block;
   margin: 20px 10px;
+  fill: #FFFFFF;
 }
 
 .menuMobile--active {
@@ -334,8 +341,9 @@
   opacity: 1 !important;
   width: 120px !important;
   transition: 0.2s ease-in-out;
-  background: #ececec !important;
-  box-shadow: inset 4px 0px px #b1b1b1, inset -2px -2px 10px #fff;
+  background: #1e1e1e !important;
+  box-shadow: inset 10px 0px 15px #292929;
+  color: #FFFFFF;
 }
 
 .switchDarkMode {
@@ -441,8 +449,8 @@
   border-radius: 25px;
   transition: transform 0.3s ease-out;
   z-index: 10;
-  box-shadow: -3px 3px 5px #b1b1b1, 5px -5px 10px rgba(255, 255, 255, 0.18);
-  background: linear-gradient(225deg, #eee, #f4f4f4);
+  background: linear-gradient(145deg, #141414, #242424);
+  box-shadow: -7px 5px 10px #333333, 3px -3px 10px #1a1a1a;
 }
 @media (min-width: 912px) {
   .mainHeader {
@@ -453,7 +461,7 @@
     margin-top: 5%;
     margin-left: 10px;
     border-radius: 25px;
-    box-shadow: -5px 5px 5px #b1b1b1, 8px -8px 10px rgba(255, 255, 255, 0.18);
+    box-shadow: -7px 5px 10px #333333, 3px -3px 10px #1a1a1a;
   }
   .mainHeader:hover {
     transform: scale(1.03);
@@ -471,179 +479,6 @@
   .headerSocial__social {
     display: flex;
   }
-}
-
-body.dark {
-  background: #23272E;
-}
-body.dark.dark .loaderScreen {
-  background: #23272E;
-}
-body.dark.dark .loaderScreen__circle::before {
-  border: 2px solid #D55FDE;
-  border-left: 2px solid rgba(0, 0, 0, 0.3019607843);
-  border-top: 2px solid rgba(0, 0, 0, 0.3019607843);
-}
-body.dark.dark .loaderScreen_logo .st0 {
-  fill: #FFFFFF;
-}
-body.dark.dark .loaderScreen_logo .st1 {
-  fill: #FFFFFF;
-}
-body.dark.dark .mainHeader {
-  background: linear-gradient(145deg, #141414, #242424);
-  box-shadow: -7px 5px 10px #333333, 3px -3px 10px #1a1a1a;
-}
-body.dark.dark .logo__casvaru .st0, body.dark.dark .logo__casvaru .st1 {
-  fill: #FFFFFF;
-}
-body.dark.dark .btnHamburger__line {
-  background: #FFFFFF;
-}
-body.dark.dark .menuSocial__svg {
-  fill: rgba(255, 255, 255, 0.5019607843);
-}
-body.dark.dark .menuSocial__svg:hover {
-  fill: #FFFFFF;
-}
-@media (max-width: 540px) {
-  body.dark.dark .menu {
-    background: #292929;
-  }
-}
-body.dark.dark .menuMobile {
-  background: #23272E;
-}
-body.dark.dark .menuMobile__arrowRight {
-  fill: #FFFFFF;
-}
-body.dark.dark .menuMobile__icon {
-  fill: #FFFFFF;
-}
-body.dark.dark .menuMobile__aboutMe, body.dark .menuMobile__projects, body.dark .menuMobile__contactMe {
-  background: rgba(0, 0, 0, 0.8);
-  color: #FFFFFF;
-  fill: #FFFFFF;
-}
-body.dark.dark .menu__box:hover {
-  background: #1e1e1e;
-  box-shadow: inset -10px 0px 5px #292929;
-}
-body.dark.dark .menu__icon {
-  fill: #FFFFFF;
-}
-body.dark.dark .hiddenText {
-  background: #1e1e1e !important;
-  box-shadow: inset 10px 0px 15px #292929;
-}
-body.dark.dark .switchDarkMode {
-  border: 4px solid #B9B9B8;
-}
-body.dark.dark .switchDarkMode.active::before {
-  background: #871846;
-  margin-left: 17px;
-}
-@media (max-width: 912px) {
-  body.dark.dark .switchDarkMode.active::before {
-    margin-left: 25px;
-  }
-}
-@media (max-width: 540px) {
-  body.dark.dark .switchDarkMode.active::before {
-    margin-left: 25px;
-  }
-}
-body.dark.dark .menu__text {
-  color: #FFFFFF;
-}
-body.dark.dark .menuMobile__title {
-  color: #FFFFFF;
-}
-body.dark.dark .menuMobile a {
-  color: #FFFFFF;
-}
-body.dark.dark .containerModal__modal {
-  background: #1E1E1E;
-}
-body.dark.dark .containerModal__close span {
-  background: #FFFFFF;
-  transition: 0.2s ease-in-out;
-}
-body.dark.dark .containerModal__mail, body.dark.dark .containerModal__copy--icon {
-  fill: #FFFFFF;
-  background: rgba(0, 0, 0, 0.5019607843) !important;
-}
-body.dark.dark .containerModal__copy--icon:hover {
-  background: #871846 !important;
-}
-body.dark.dark .containerModal__close:hover span {
-  background: #871846;
-}
-body.dark.dark .containerModal__title, body.dark.dark .containerModal__location {
-  color: #FFFFFF;
-}
-body.dark.dark .containerModal__photo {
-  background: rgba(0, 0, 0, 0.5019607843) !important;
-}
-body.dark.dark .containerFirst__blog a {
-  box-shadow: 3px 3px 5px #141414, -3px -3px 5px rgba(34, 34, 34, 0.3176470588);
-  background: #F6F6F6;
-  color: #000000;
-}
-body.dark.dark .containerFirst__blog a:hover {
-  border: none;
-  color: #FFFFFF;
-  background: #871846;
-  box-shadow: inset 20px 20px 60px #1e2127, inset -20px -20px 60px #282d35;
-  border: 1px solid rgb(159, 159, 159);
-}
-body.dark.dark .containerName__title {
-  color: #FFFFFF;
-}
-body.dark.dark .containerName__title:before {
-  background: #FFFFFF;
-}
-body.dark.dark .title__slogan {
-  color: rgba(255, 255, 255, 0.5019607843);
-}
-body.dark.dark .title__arrowDown {
-  fill: #FFFFFF;
-}
-body.dark.dark .containerPicture__picture {
-  background: linear-gradient(45deg, #171A23 0%, #331F29 100%);
-}
-body.dark.dark .containerName__symbol {
-  color: #FFFFFF;
-}
-body.dark.dark .containerName__title svg {
-  fill: #FFFFFF;
-}
-body.dark.dark .containerSecond__subtitle, body.dark.dark .containerThird__subtitle {
-  color: #FFFFFF;
-}
-body.dark.dark .containerSecond__capsule {
-  background: #181818;
-  box-shadow: 3px 3px 5px #2c2c2c, -3px -3px 5px #1d1d1d;
-}
-body.dark.dark .containerSecond__capsule::before {
-  color: #FFFFFF;
-}
-body.dark.dark .containerSecond__capsule:active {
-  box-shadow: inset -5px -5px 5px #242424;
-}
-body.dark.dark .containerSecond__paragraph {
-  color: #FFFFFF;
-}
-body.dark.dark .containerSecond__box {
-  background: #181818;
-  box-shadow: -3px 5px 5px #262626, 3px -3px 5px #1a1a1a;
-}
-body.dark.dark .containerSecond__subtitle {
-  color: #FFFFFF;
-}
-body.dark.dark .boxBottons {
-  background: #FFFFFF;
-  fill: #000000;
 }
 
 .containerFirst {
@@ -684,10 +519,10 @@ body.dark.dark .boxBottons {
 }
 .containerFirst .containerFirst__blog a:hover {
   background: #871846;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   border: 1px solid #23272E;
-  box-shadow: inset 20px 20px 60px #686868, inset -20px -20px 60px #7d7d7d;
-  color: #FFFFFF;
+  box-shadow: inset 20px 20px 60px #414141, inset -20px -20px 60px #7d7d7d;
+  color: #000000;
 }
 @media (max-width: 700px) {
   .containerFirst .containerFirst__blog a {
@@ -736,6 +571,7 @@ body.dark.dark .boxBottons {
   margin-left: 50px;
 }
 .containerFirst .containerName .containerName__title {
+  color: #FFFFFF;
   position: relative;
   overflow: hidden;
   white-space: nowrap;
@@ -757,11 +593,7 @@ body.dark.dark .boxBottons {
   margin-left: -7px;
   margin-top: 13px;
   position: absolute;
-}
-@media (max-width: 540px) {
-  .containerFirst .containerName .containerName__title svg {
-    fill: #FFFFFF;
-  }
+  fill: #FFFFFF;
 }
 @media (max-width: 540px) {
   .containerFirst .containerName .containerName__pleca::before {
@@ -772,7 +604,7 @@ body.dark.dark .boxBottons {
 .containerFirst .title__slogan {
   font-family: "Courier New", Courier Prime, monospace;
   margin-top: 100px;
-  color: rgba(0, 0, 0, 0.5019607843);
+  color: #FFFFFF;
   transition: 0.2s ease-in-out;
   white-space: nowrap;
 }
@@ -792,11 +624,7 @@ body.dark.dark .boxBottons {
   display: block;
   animation: jumpArrow 1s infinite;
   transition: 0.2s ease-in-out;
-}
-@media (max-width: 540px) {
-  .containerFirst .title__arrowDown {
-    fill: #FFFFFF;
-  }
+  fill: #FFFFFF;
 }
 .containerFirst .containerPicture {
   position: absolute;
@@ -916,7 +744,7 @@ body.dark.dark .boxBottons {
 .containerSecond .containerSecond__row1 .containerSecond__subtitle {
   margin-top: 60px;
   margin-left: 150px;
-  color: #000000;
+  color: #FFFFFF;
   scroll-snap-align: center;
 }
 @media (max-width: 912px) {
@@ -943,7 +771,7 @@ body.dark.dark .boxBottons {
 .containerSecond .containerSecond__capsule:nth-child(2)::before {
   content: "Personal";
   position: absolute;
-  color: #000000;
+  color: #FFFFFF;
   top: 0;
   left: 0;
   z-index: 2;
@@ -962,7 +790,7 @@ body.dark.dark .boxBottons {
 .containerSecond .containerSecond__capsule:nth-child(3)::before {
   content: "Experiencia";
   position: absolute;
-  color: #000000;
+  color: #FFFFFF;
   top: 0;
   left: 0;
   z-index: 2;
@@ -981,7 +809,7 @@ body.dark.dark .boxBottons {
 .containerSecond .containerSecond__capsule:nth-child(4)::before {
   content: "Habilidades";
   position: absolute;
-  color: #000000;
+  color: #FFFFFF;
   top: 0;
   left: 0;
   z-index: 2;
@@ -1007,8 +835,8 @@ body.dark.dark .boxBottons {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(225deg, #f0f0f0, rgba(135, 24, 70, 0.0784313725));
-  box-shadow: -4px 8px 20px #d0d0d0, 8px -8px 15px #fff;
+  background: #181818;
+  box-shadow: 3px 3px 5px #2c2c2c, -3px -3px 5px #1d1d1d;
 }
 .containerSecond .containerSecond__capsule::after {
   content: "";
@@ -1025,7 +853,7 @@ body.dark.dark .boxBottons {
   transition: clip-path 0.3s ease-in-out;
 }
 .containerSecond .containerSecond__capsule:active {
-  box-shadow: inset -5px -5px 5px #dadada;
+  box-shadow: inset -5px -5px 5px #242424;
 }
 @media (max-width: 1250px) {
   .containerSecond .containerSecond__capsule {
@@ -1057,6 +885,7 @@ body.dark.dark .boxBottons {
   max-width: 40%;
   margin-top: 200px;
   position: relative;
+  color: #FFFFFF;
 }
 @media (max-width: 912px) {
   .containerSecond .containerSecond__row2 {
@@ -1126,7 +955,8 @@ body.dark.dark .boxBottons {
   display: flex;
   position: relative;
   overflow: hidden;
-  background: #e9e9e9;
+  background: #181818;
+  box-shadow: -3px 5px 5px #262626, 3px -3px 5px #1a1a1a;
 }
 .containerSecond .containerSecond__grid .containerSecond__box:hover .containerSecond__container {
   margin-bottom: 5px;
@@ -1142,6 +972,7 @@ body.dark.dark .boxBottons {
 }
 .containerSecond .containerSecond__grid .containerSecond__box .containerSecond__subtitle {
   text-align: center;
+  color: #FFFFFF;
 }
 @media (max-width: 1024px) {
   .containerSecond .containerSecond__grid .containerSecond__box {
@@ -1223,7 +1054,7 @@ body.dark.dark .boxBottons {
   height: 50px;
   margin-top: 50px;
   margin-left: 150px;
-  color: #000000;
+  color: #FFFFFF;
 }
 @media (max-width: 912px) {
   .containerThird .containerThird__subtitle {
@@ -1419,7 +1250,7 @@ body.dark.dark .boxBottons {
   width: 37.5em;
   height: 20.3125em;
   margin: 0 auto;
-  background: #F6F6F6;
+  background: #1E1E1E;
   border-radius: 0.625em;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1432,7 +1263,7 @@ body.dark.dark .boxBottons {
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1019607843);
+  background: rgba(0, 0, 0, 0.5019607843);
   margin: auto;
   margin-top: 20px;
   overflow: hidden;
@@ -1453,6 +1284,7 @@ body.dark.dark .boxBottons {
 }
 .containerModal .containerModal__modal .containerModal__section2 .containerModal__title {
   margin-top: 5.625em;
+  color: #FFFFFF;
 }
 .containerModal .containerModal__modal .containerModal__section2 .containerModal__mail {
   width: 13.75em;
@@ -1514,6 +1346,7 @@ body.dark.dark .boxBottons {
   font-weight: 500;
   margin-top: 0.625em;
   margin-bottom: 0.625em;
+  color: #FFFFFF;
 }
 .containerModal .containerModal__modal .containerModal__section2 .containerModal__whatsapp {
   background: #21FF89;
@@ -1524,7 +1357,7 @@ body.dark.dark .boxBottons {
   line-height: 2.5;
   font-weight: 600;
   font-size: 1em;
-  color: #FFFFFF;
+  color: #000000;
   transition: 0.3s ease-in-out;
 }
 .containerModal .containerModal__modal .containerModal__section2 .containerModal__whatsapp:hover {
@@ -1547,7 +1380,7 @@ body.dark.dark .boxBottons {
   height: 1.5625em;
   display: inline-block;
   border-radius: 0.3125em;
-  background: #000000;
+  background: #FFFFFF;
   position: absolute;
   margin-top: 0.1875em;
   margin-left: 0.8125em;
@@ -1594,6 +1427,7 @@ a {
 }
 
 body {
+  background: #23272E;
   font-size: 16px;
   transition: 0.2s ease-out;
   overflow-x: hidden;
